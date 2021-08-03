@@ -4,8 +4,35 @@
 {% block title %}Home page{% endblock title %}
 
 {% block content %}
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <img src="{% static 'images/logo.png' %}" class="img-fluid" alt="DjangoX logo"/>
-  <p class="lead">A Django starter project with batteries.</p>
-</div>
+        <div class="row mb-5">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a class="btn btn-success btn-lg">Install at Midtown</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <a class="btn btn-success btn-lg">Apply at Midtown</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="display-6 text-success"><i class="fas fa-user-alt"></i> OUR REMODELING SERVICES</p>
+                <p>We know there are a lot of contractors around, but only a few that you can truly trust. At Midtown Home Improvements, we’re proud to continually be the general contractor to whom our customers turn. We offer home remodeling services, including the following:</p>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group-flush">
+                    <li class="list-group-item"><i class="fas fa-user-alt"></i> Roof</li>
+                    <li class="list-group-item"><i class="fas fa-user-alt"></i> Siding</li>
+                    <li class="list-group-item"><i class="fas fa-user-alt"></i> Fencing</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                 <ul class="list-group-flush">
+                    <li class="list-group-item">Roof</li>
+                    <li class="list-group-item">Siding</li>
+                    <li class="list-group-item">Fencing</li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                We only install high-quality materials and work hard to ensure that your desired design becomes a reality. We are proud to serve residents throughout St. Louis, Kansas City, Chicago and Nashville greater metro areas.
+            </div>
+        </div>
 {% endblock content %}
