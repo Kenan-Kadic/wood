@@ -1,7 +1,27 @@
 {% extends '_base.html' %}
+{% load static %}
 
-{% block title %}About page{% endblock %}
+{% block title %}About page {% endblock %}
 
 {% block content %}
 <h1>About page</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="{% static 'images/hello.jpg'%}" class="card-img-top p-4" alt="hello">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="display-6 d-flex justify-content-center">GREATER ST. LOUIS, KANSAS CITY, NASHVILLE, CHICAGO HOME REMODELING GENERAL CONTRACTOR</p>
+                <div class="d-flex justify-content-center">
+                    <hr style="width: 5rem;">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <p class="h6">AWARD-WINNING FULL LINE RESIDENTIAL REMODELER</p>
+                <p>Since 1990, Midtown Home Improvements has been your local, family-owned and -operated home remodeling company, offering everything from roof replacement to window installation to kitchen and bathroom remodeling services. We are proud to service customers throughout the greater St. Louis, Kansas City, Nashville, and Chicago metro areas.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KvgqaXq7z2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
 {% endblock content %}
