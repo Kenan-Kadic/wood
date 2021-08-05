@@ -76,10 +76,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'pages:home'%}">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{% url 'pages:about' %}">ABOUT US </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -105,10 +105,8 @@
       <p>Default content...</p>
     {% endblock content %}
     </div>
-
-  <footer class="footer">
-    <div class="container-fluid">
-        <form class="row imagesbaselayout">
+<div class="container-fluid">
+    <form class="row">
             <div class="col-md-12">
                 <p class="d-flex justify-content-center display-6">Contact Us</p>
             </div>
@@ -180,13 +178,20 @@
             <div class="col-md-12 d-flex justify-content-center pb-4">
                 <button type="submit" class="btn btn-success">Submit</button>
             </div>
+        </form>
+    <div class="row">
             <div class="col-md-12 display-6 d-flex justify-content-center">
                 DON'T HESITATE. WE’RE HERE TO HELP!
             </div>
             <div class="col-md-12 d-flex justify-content-center">
                 <a href="#" class="stretched-link text-decoration-none text-success ">Sitemap</a>
             </div>
-        </form>
+    </div>
+</div>
+
+  <footer class="footer">
+    <div class="container-fluid">
+        <span class="text-muted">footer...</span>
     </div>
   </footer>
 

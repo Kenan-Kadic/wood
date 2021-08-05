@@ -35,6 +35,4 @@ body {
 .imageshomepage {
   background-image: url(/static/images/home.jpg); /*background image for the home page*/
 }
-.imagesbaselayout{
-  background-image: url(/static/images/contact.jpg); /*background image for the contact us section*/
-}
+
