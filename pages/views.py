@@ -18,3 +18,6 @@ def exteriorPageView(request):
 def interiorPageView(request):
     return render(request, 'pages/interior.html')
 
+def areasWeServe(request):
+    return render(request, 'pages/areasWeServe.html')
+
