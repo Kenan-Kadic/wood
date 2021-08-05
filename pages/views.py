@@ -16,3 +16,6 @@ class ContactPageView(TemplateView):
 
 class ExteriorPageView(TemplateView):
     template_name = 'pages/exterior.html'
+
+class InteriorPageView(TemplateView):
+    template_name = 'pages/interior.html'
