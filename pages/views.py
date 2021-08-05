@@ -7,3 +7,12 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name = 'pages/about.html'
+
+class FinancingPageView(TemplateView):
+    template_name = 'pages/financing.html'
+
+class ContactPageView(TemplateView):
+    template_name = 'pages/contact.html'
+
+class ExteriorPageView(TemplateView):
+    template_name = 'pages/exterior.html'
