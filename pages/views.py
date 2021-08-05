@@ -1,21 +1,20 @@
-from django.views.generic import TemplateView
+from django.shortcuts import render
 
+def homePageView(request):
+    return render(request, 'pages/home.html')
 
-class HomePageView(TemplateView):
-    template_name = 'pages/home.html'
+def aboutPageView(request):
+    return render(request, 'pages/about.html')
 
+def financingPageView(request):
+    return render(request, 'pages/financing.html')
 
-class AboutPageView(TemplateView):
-    template_name = 'pages/about.html'
+def contactPageView(request):
+    return render(request, 'pages/contact.html')
 
-class FinancingPageView(TemplateView):
-    template_name = 'pages/financing.html'
+def exteriorPageView(request):
+    return render(request, 'pages/exterior.html')
 
-class ContactPageView(TemplateView):
-    template_name = 'pages/contact.html'
+def interiorPageView(request):
+    return render(request, 'pages/interior.html')
 
-class ExteriorPageView(TemplateView):
-    template_name = 'pages/exterior.html'
-
-class InteriorPageView(TemplateView):
-    template_name = 'pages/interior.html'
