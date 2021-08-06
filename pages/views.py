@@ -21,3 +21,8 @@ def interiorPageView(request):
 def areasWeServe(request):
     return render(request, 'pages/areasWeServe.html')
 
+def kitchensPageView(request):
+    return render(request, 'pages/kitchens.html')
+
+def decksPageView(request):
+    return render(request, 'pages/decks.html')
