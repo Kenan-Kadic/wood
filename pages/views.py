@@ -26,5 +26,9 @@ def kitchensPageView(request):
 
 def decksPageView(request):
     return render(request, 'pages/decks.html')
+
 def fencingPageView(request):
     return render(request, 'pages/fencing.html')
+
+def roofsPageView(request):
+    return render(request, 'pages/roofs.html')
