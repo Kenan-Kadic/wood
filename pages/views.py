@@ -32,3 +32,5 @@ def fencingPageView(request):
 
 def roofsPageView(request):
     return render(request, 'pages/roofs.html')
+def sidingGutterPageView(request):
+    return render(request, 'pages/sidinggutter.html')
