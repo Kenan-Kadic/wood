@@ -82,17 +82,25 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link active dropdown-toggle" href="{% url 'pages:about' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ABOUT US </a>
                         <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"> COST VS VALUE REPORT</a></li>
-                            <li><a class="dropdown-item" href="#"> GALLERY </a></li>
-                            <li><a class="dropdown-item" href="#"> BLOG </a></li>
-                            <li><a class="dropdown-item" href="#"> VIDEOS </a></li>
-                            <li><a class="dropdown-item" href="#"> REVIEWS </a></li>
+                            <li><a class="dropdown-item text-success" href="#"> COST VS VALUE REPORT</a></li>
+                            <li><a class="dropdown-item text-success" href="#"> GALLERY </a></li>
+                            <li><a class="dropdown-item text-success" href="#"> BLOG </a></li>
+                            <li><a class="dropdown-item text-success" href="#"> VIDEOS </a></li>
+                            <li><a class="dropdown-item text-success" href="#"> REVIEWS </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'pages:exterior' %}"> EXTERIOR </a>
+                    <li class="nav-item dropdown">
+                       <a class="nav-link active dropdown-toggle"  id="navbarDropdownExterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EXTERIOR </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior" >
+                            <li> <a class="dropdown-item text-success" href="{% url 'pages:exterior' %}">OVERVIEW </a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:decks' %}">DECK UNDERDECKING</a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:fencing' %}"> FENCING </a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:roofs' %}"> ROOFS </a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:sideGutter' %}"> SINDING-GUTTER </a> </li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:windows_doors' %}"> WINDOWS & DOORS </a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link active" href="{% url 'pages:interior' %}"> INTERIOR </a>
                     </li>
                     <li class="nav-item">
@@ -100,9 +108,6 @@
                     </li>
                     <li class="nav-item">
                          <a class="nav-link active" href="{% url 'pages:financing' %}">FINANCING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
             </div>
