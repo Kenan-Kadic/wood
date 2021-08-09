@@ -39,12 +39,12 @@
         </div>
         <div class="col-md-6">
             <ul class="list-group-flush">
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Roof </a> replacement & repairs</li>
+                <li class="list-group-item"><a href="{% url 'pages:roofs' %}" class="text-success text-decoration-none"> Roof </a> replacement & repairs</li>
                 <li class="list-group-item"> Roofing installation, including metal roofing </li>
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Decks </a> & under decking</li>
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Fencing </a></li>
+                <li class="list-group-item"><a href="{% url 'pages:decks' %}" class="text-success text-decoration-none"> Decks </a> & under decking</li>
+                <li class="list-group-item"><a href="{% url 'pages:fencing' %}" class="text-success text-decoration-none"> Fencing </a></li>
                 <li class="list-group-item"> Patio covers </li>
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Siding </a></li>
+                <li class="list-group-item"><a href="{% url 'pages:sideGutter' %}" class="text-success text-decoration-none"> Siding </a></li>
                 <li class="list-group-item"> Soffit </li>
             </ul>
         </div>
@@ -52,9 +52,10 @@
             <ul class="list-group-flush">
                 <li class="list-group-item"> Fascia </li>
                 <li class="list-group-item"> Gutters </li>
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Windows & entry doors </a></li>
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Attic insulation </a></li>
-                <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Kitchen  bathroom remodels </a> & <a href="#" class="text-success text-decoration-none"> bathroom remodels </a></li>
+                <li class="list-group-item"><a href="{% url 'pages:windows_doors' %}" class="text-success text-decoration-none"> Windows & entry doors </a></li>
+                <li class="list-group-item"><a href="{% url 'pages:attic_insulation' %}" class="text-success text-decoration-none"> Attic insulation </a></li>
+                <li class="list-group-item"><a href="{% url 'pages:kitchens' %}" class="text-success text-decoration-none"> Kitchen remodels</a></li>
+                <li class="list-group-item"><a href="{% url 'pages:bathrooms' %}" class="text-success text-decoration-none"> Bathroom remodels </a></li>
                 <li class="list-group-item"> Basement finishing </li>
             </ul>
         </div>
@@ -67,7 +68,7 @@
     <div class="row">
         <div class="col-md-12">
             <p class="h3"> LET US BEAUTIFY YOUR HOME </p>
-            <p>With over 40 full-time employees and 30 part-time employees, we can handle exterior jobs of any size. Let us show you why we are a consistently top-rated company. We serve customers throughout the Greater St. Louis and Kansas City areas. Call us at <strong class="text-success">(816) 246-8589</strong> in O’Fallon, MO, or at <strong class="text-success">(636) 379-8889</strong> in Lee’s Summit, MO. You may also <a href="#" class="text-success text-decoration-none"> submit any comments or questions to us via our online form.</a></p>
+            <p>With over 40 full-time employees and 30 part-time employees, we can handle exterior jobs of any size. Let us show you why we are a consistently top-rated company. We serve customers throughout the Greater St. Louis and Kansas City areas. Call us at <strong class="text-success">(816) 246-8589</strong> in O’Fallon, MO, or at <strong class="text-success">(636) 379-8889</strong> in Lee’s Summit, MO. You may also <a href="{% url 'pages:contact' %}" class="text-success text-decoration-none"> submit any comments or questions to us via our online form.</a></p>
         </div>
     </div>
 
