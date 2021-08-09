@@ -41,3 +41,6 @@ def windowsDoorsPageView(request):
 
 def bathroomsPageView(request):
     return render(request, 'pages/bathrooms.html')
+
+def atticInsulationPageView(request):
+    return render(request, 'pages/attic_insulation.html')
