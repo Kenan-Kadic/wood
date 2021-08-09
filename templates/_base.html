@@ -91,8 +91,8 @@
                     </li>
                     <li class="nav-item dropdown">
                        <a class="nav-link active dropdown-toggle"  id="navbarDropdownExterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EXTERIOR </a>
-                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior" >
-                            <li> <a class="dropdown-item text-success" href="{% url 'pages:exterior' %}">OVERVIEW </a></li>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior">
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:exterior' %}">OVERVIEW </a></li>
                             <li><a class="dropdown-item text-success" href="{% url 'pages:decks' %}">DECK UNDERDECKING</a></li>
                             <li><a class="dropdown-item text-success" href="{% url 'pages:fencing' %}"> FENCING </a></li>
                             <li><a class="dropdown-item text-success" href="{% url 'pages:roofs' %}"> ROOFS </a></li>
@@ -100,8 +100,17 @@
                             <li><a class="dropdown-item text-success" href="{% url 'pages:windows_doors' %}"> WINDOWS & DOORS </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="{% url 'pages:interior' %}"> INTERIOR </a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" id="navbarDropdownInterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INTERIOR </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownInterior">
+                            <Li><a class="dropdown-item text-success" href="{% url 'pages:interior' %}"> OVERVIEW </a></Li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:kitchens' %}"> KITCHENS </a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:bathrooms' %}"> BATHROOMS </a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:attic_insulation' %}"> ATTIC INSULATION </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'pages:areasweserve' %}">AREAS WE SERVE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="{% url 'pages:contact' %}">CONTACT US</a>
