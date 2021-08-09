@@ -38,3 +38,6 @@ def sidingGutterPageView(request):
 
 def windowsDoorsPageView(request):
     return render(request, 'pages/windows_doors.html')
+
+def bathroomsPageView(request):
+    return render(request, 'pages/bathrooms.html')
