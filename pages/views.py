@@ -44,3 +44,6 @@ def bathroomsPageView(request):
 
 def atticInsulationPageView(request):
     return render(request, 'pages/attic_insulation.html')
+
+def workMidtownPageView(request):
+    return render(request, 'pages/apply_midtown.html')
