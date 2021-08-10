@@ -31,3 +31,8 @@ body {
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
 }
+
+.imageshomepage {
+  background-image: url(/static/images/home.jpg); /*background image for the home page*/
+}
+
