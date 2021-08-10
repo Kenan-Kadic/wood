@@ -47,3 +47,6 @@ def atticInsulationPageView(request):
 
 def workMidtownPageView(request):
     return render(request, 'pages/apply_midtown.html')
+
+def installMidtownPageView(request):
+    return render(request, 'pages/install_midtown.html')
