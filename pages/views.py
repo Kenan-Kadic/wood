@@ -50,3 +50,6 @@ def workMidtownPageView(request):
 
 def installMidtownPageView(request):
     return render(request, 'pages/install_midtown.html')
+
+def awardsPageView(request):
+    return render(request, 'pages/award.html')
