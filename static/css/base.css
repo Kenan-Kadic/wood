@@ -35,33 +35,33 @@ body {
 
 
 .fade-in{
-  animation: fadeIn 2s;
+  animation: fadeIn 2s; /* fade animation for the award page */
 }
 .fade-in2{
-  animation: fadeIn 3s;
+  animation: fadeIn 3s; /* fade animation for the award page */
 }
 .fade-in3{
-  animation: fadeIn 4s;
+  animation: fadeIn 4s; /* fade animation for the award page */
 }
 .fade-in4{
-  animation: fadeIn 5s;
+  animation: fadeIn 5s; /* fade animation for the award page */
 }
 .fade-in5{
-  animation: fadeIn 6s;
+  animation: fadeIn 6s; /* fade animation for the award page */
 }
 .fade-in6{
-  animation: fadeIn 7s;
+  animation: fadeIn 7s; /* fade animation for the award page */
 }
 .fade-in7{
-  animation: fadeIn 8s;
+  animation: fadeIn 8s; /* fade animation for the award page */
 }
 .fade-in8{
-  animation: fadeIn 9s;
+  animation: fadeIn 9s; /* fade animation for the award page */
 }
 .fade-in9{
-  animation: fadeIn 10s;
+  animation: fadeIn 10s; /* fade animation for the award page */
 }
-@keyframes fadeIn {
+@keyframes fadeIn {   /* keyframes for the fade animation */
   from {
     opacity: 0;
        }
