@@ -29,37 +29,41 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="row">
-                        <div class="col-2"><i class="fas fa-map-signs"></i></div>
+                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="col-10">
-                            <p class="m-0">120 Resource Dr</p>
-                            <p class="m-0">Wentzville, IL 63385</p>
+                            <p class="m-0"> 120 Resource Dr </p>
+                            <p class="m-0"> Wentzville, <br/> MO 63385 </p>
+                            <p class="m-0"> <strong class="text-success"> (636) 379-8889 </strong></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="row">
-                        <div class="col-2"><i class="fas fa-map-signs"></i></div>
+                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="col-10">
-                            <p class="m-0">555 NW Blue Pkwy<br/>Suite B</p>
-                            <p class="m-0">Lee's Summit, MO 64063</p>
+                            <p class="m-0"> 555 NW Blue Pkwy <br/> Suite B </p>
+                            <p class="m-0"> Lee's Summit, MO 64063 </p>
+                            <p class="m-0"> <strong class="text-success"> (816) 249-8589</strong></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="row">
-                        <div class="col-2"><i class="fas fa-map-signs"></i></div>
+                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="col-10">
-                            <p class="m-0">1400 Donelson Pike<br/>Suite A20</p>
-                            <p class="m-0">Nashville, TN 37127</p>
+                            <p class="m-0"> 1400 Donelson Pike <br/> Suite A20 </p>
+                            <p class="m-0"> Nashville, TN 37127 </p>
+                            <p class="m-0"> <strong class="text-success">(615) 915-1285</strong> </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="row">
-                        <div class="col-2"><i class="fas fa-map-signs"></i></div>
+                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
                         <div class="col-10">
-                            <p class="m-0">945 N Edgewood Ave</p>
-                            <p class="m-0">Wood Dale, IL 60191</p>
+                            <p class="m-0"> 945 N Edgewood Ave </p>
+                            <p class="m-0"> Wood Dale, <br/> IL 60191 </p>
+                            <p class="m-0"> <strong class="text-success">(630) 473-4165 </strong></p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +98,7 @@
                        <a class="nav-link active dropdown-toggle"  id="navbarDropdownExterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EXTERIOR </a>
                         <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior">
                             <li><a class="dropdown-item text-success" href="{% url 'pages:exterior' %}">OVERVIEW </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:decks' %}">DECK UNDERDECKING</a></li>
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:decks' %}"> DECK UNDERDECKING</a></li>
                             <li><a class="dropdown-item text-success" href="{% url 'pages:fencing' %}"> FENCING </a></li>
                             <li><a class="dropdown-item text-success" href="{% url 'pages:roofs' %}"> ROOFS </a></li>
                             <li><a class="dropdown-item text-success" href="{% url 'pages:sideGutter' %}"> SINDING-GUTTER </a> </li>
@@ -110,14 +114,24 @@
                             <li><a class="dropdown-item text-success" href="{% url 'pages:attic_insulation' %}"> ATTIC INSULATION </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'pages:areasweserve' %}">AREAS WE SERVE</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" id="navbarDropdownAreas" role="button" data-bs-toggle="dropdown" aria-expanded="false"> AREAS WE SERVE </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownAreas">
+                            <li><a class="dropdown-item text-success" href="{% url 'pages:areasweserve' %}"> OVERVIEW </a></li>
+                            <li><a class="dropdown-item text-success"> ILLINOIS </a></li>
+                            <li><a class="dropdown-item text-success"> KANSAS </a></li>
+                            <Li><a class="dropdown-item text-success"> MISSOURI </a></Li>
+                            <li><a class="dropdown-item text-success"> TENNESSEE </a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="{% url 'pages:contact' %}">CONTACT US</a>
                     </li>
                     <li class="nav-item">
                          <a class="nav-link active" href="{% url 'pages:financing' %}">FINANCING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'pages:awards_midtown' %}">OUR AWARDS</a>
                     </li>
                 </ul>
             </div>
@@ -213,7 +227,7 @@
                 DON'T HESITATE. WE’RE HERE TO HELP!
             </div>
             <div class="col-md-12 d-flex justify-content-center">
-               <a href="#" class=" text-success text-decoration-none">Sitemap</a>
+               <a href="{% url 'pages:areasweserve' %}" class=" text-success text-decoration-none">Sitemap</a>
             </div>
         </div>
     </div>

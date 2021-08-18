@@ -6,7 +6,7 @@
 {% block content %}
     <div class="row mb-5">
         <div class="col-md-6 d-flex justify-content-start">
-            <a class="btn btn-success btn-lg">Install at Midtown</a>
+            <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
             <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
@@ -21,16 +21,16 @@
 
         <div class="row">
             <div class="col-md-12">
-                <p class="display-6 d-flex justify-content-center">GREATER ST. LOUIS, KANSAS CITY, NASHVILLE, CHICAGO HOME REMODELING GENERAL CONTRACTOR </p>
+                <p class="display-6 d-flex justify-content-center">GREATER ST. LOUIS, KANSAS CITY, <br> NASHVILLE, CHICAGO HOME REMODELING <br> GENERAL CONTRACTOR </p>
                 <div class="d-flex justify-content-center">
-                    <hr style="width: 5rem;">
+                    <hr class="border border-3 border-success" style="width: 5rem;">
                 </div>
             </div>
             <div class="col-md-12">
-                <p class="h6">AWARD-WINNING FULL LINE RESIDENTIAL REMODELER</p>
+                <p class="h3">AWARD-WINNING FULL LINE RESIDENTIAL REMODELER</p>
                 <p>Since 1990, Midtown Home Improvements has been your local, family-owned and -operated home remodeling company, offering everything from roof replacement to window installation to kitchen and bathroom remodeling services. We are proud to service customers throughout the greater St. Louis, Kansas City, Nashville, and Chicago metro areas.</p>
                 <div class="ratio ratio-16x9">
-                    <iframe src="https://www.youtube.com/embed/KvgqaXq7z2I" title="YouTube video player" allowfullscreen></iframe>
+                    <iframe class="p-3" src="https://www.youtube.com/embed/KvgqaXq7z2I" title="YouTube video player" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -115,22 +115,22 @@
             </div>
             <div class="col-md-6">
                 <ul class="list-group-flush">
-                    <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Roof</a> replacement & repair </li>
-                    <li class="list-group-item"> Energy-efficient <a href="#" class="text-success text-decoration-none">windows & entry doors</a> </li>
-                    <li class="list-group-item"><a href="#" class="text-success text-decoration-none"> Siding </a></li>
-                    <li class="list-group-item">Soffits </li>
-                    <li class="list-group-item">Fascia </li>
-                    <li class="list-group-item"> Gutters </li>
+                    <li class="list-group-item"><a href="{% url 'pages:roofs' %}" class="text-success text-decoration-none"> Roof</a> replacement & repair </li>
+                    <li class="list-group-item"> Energy-efficient <a href="{% url 'pages:windows_doors' %}" class="text-success text-decoration-none">windows & entry doors</a> </li>
+                    <li class="list-group-item"><a href="{% url 'pages:sideGutter' %}" class="text-success text-decoration-none"> Siding </a></li>
+                    <li class="list-group-item"> Soffits </li>
+                    <li class="list-group-item"> Fascia </li>
+                    <li class="list-group-item"><a href="{% url 'pages:sideGutter' %}" class="text-success text-decoration-none"> Gutters </a></li>
                 </ul>
             </div>
             <div class="col-md-6">
                 <ul class="list-group-flush">
-                    <li class="list-group-item"> Kroy <a href="#" class="text-success text-decoration-none"> fencing </a></li>
-                    <li class="list-group-item"> Low-maintenance  <a href="#" class="text-success text-decoration-none"> decks </a> </li>
+                    <li class="list-group-item"> Kroy <a href="{% url 'pages:fencing' %}" class="text-success text-decoration-none"> fencing </a></li>
+                    <li class="list-group-item"> Low-maintenance  <a href="{% url 'pages:decks' %}" class="text-success text-decoration-none"> decks </a> </li>
                     <li class="list-group-item"> Patio covers </li>
-                    <li class="list-group-item"> <a href="#" class="text-success text-decoration-none"> Kitchen</a> & <a href="#" class="text-success text-decoration-none"> bathroom </a> remodeling </li>
+                    <li class="list-group-item"> <a href="{% url 'pages:kitchens' %}" class="text-success text-decoration-none"> Kitchen</a> & <a href="{% url 'pages:bathrooms' %}" class="text-success text-decoration-none"> bathroom </a> remodeling </li>
                     <li class="list-group-item"> Basement finishing </li>
-                    <li class="list-group-item"> eShield™ <a href="#" class="text-success text-decoration-none"> attic insulation </a> </li>
+                    <li class="list-group-item"> eShield™ <a href="{% url 'pages:attic_insulation' %}" class="text-success text-decoration-none"> attic insulation </a></li>
                     <li class="list-group-item"> Sunrooms </li>
                 </ul>
             </div>

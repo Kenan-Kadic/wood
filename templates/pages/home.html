@@ -6,7 +6,7 @@
 {% block content %}
         <div class="row mb-5">
             <div class="col-md-6 d-flex justify-content-start">
-                <a class="btn btn-success btn-lg">Install at Midtown</a>
+                <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
             </div>
             <div class="col-md-6 d-flex justify-content-end">
                 <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
@@ -27,10 +27,10 @@
                     </div>
                     <div class="card-body bg-success">
                         <p><a href="{% url 'pages:decks' %}" class="text-decoration-none text-white"> Decks </a></p>
-                        <p><a href="{% url 'pages:fencing' %}" class="text-decoration-none text-white">Fencing</a></p>
-                        <p><a href="{% url 'pages:roofs' %}" class="text-decoration-none text-white"> Roofing </a></p>
-                        <p><a href="{% url 'pages:sideGutter' %}" class="text-decoration-none text-white"> Siding </a></p>
-                        <p><a href="{% url 'pages:windows_doors' %}" class="text-decoration-none text-white"> Windows & Doors </a></p>
+                        <p><a href="{% url 'pages:fencing' %}" class="text-decoration-none text-white"> Fencing </a></p>
+                        <p><a href="{% url 'pages:roofs' %}" class="text-decoration-none text-white"><i class="fas fa-home me-3"></i> Roofing </a></p>
+                        <p><a href="{% url 'pages:sideGutter' %}" class="text-decoration-none text-white"><i class="fas fa-bars me-3"></i> Siding </a></p>
+                        <p><a href="{% url 'pages:windows_doors' %}" class="text-decoration-none text-white"><i class="fas fa-city me-3"></i> Windows & Doors </a></p>
                     </div>
                 </div>
             </div>
@@ -41,10 +41,10 @@
                         INTERIOR OPTIONS
                     </div>
                     <div class="card-body bg-success">
-                        <p><a href="{% url 'pages:kitchens' %}" class="text-decoration-none text-white"> Kitchen Remodeling </a></p>
-                        <p><a href="{% url 'pages:bathrooms' %}" class="text-decoration-none text-white"> Bathroom Remodeling </a></p>
+                        <p><a href="{% url 'pages:kitchens' %}" class="text-decoration-none text-white"><i class="fas fa-hammer"></i> Kitchen Remodeling </a></p>
+                        <p><a href="{% url 'pages:bathrooms' %}" class="text-decoration-none text-white"><i class="fas fa-bath me-3"></i> Bathroom Remodeling </a></p>
                         <p><a href="{% url 'pages:attic_insulation' %}" class="text-decoration-none text-white"> Attic Insulation </a></p>
-                        <p class="text-white"> Sunrooms </p>
+                        <p class="text-white"><i class="fas fa-home me-3"></i> Sunrooms </p>
                     </div>
                 </div>
             </div>
@@ -54,17 +54,17 @@
                <p class="display-6 text-black d-flex justify-content-center mb-4"> ABOUT MIDTOWN HOME IMPROVEMENTS </p>
                <p> Since 1990, Midtown Home Improvements has been your local, family-owned and -operated home remodeling company, offering everything from roof replacement to window installation to kitchen and bathroom remodeling services. We are proud to service customers throughout the greater St. Louis, Kansas City, and Nashville metro areas. As an industry leader in home improvement, we have received numerous recognitions for our work. We know that our customers are the reason that we’re in business, and we strive to exceed their expectations every time. We have 100 full-time and 50 part-time employees, which means that we can take on any size job, no matter how big or small.</p>
                <div class="d-flex justify-content-md-center">
-                    <a href="{% url 'pages:about' %}"class="btn btn-success btn-lg" style="width: 18rem;">READ MORE</a>
+                    <a href="{% url 'pages:about' %}" class="btn btn-success btn-lg" style="width: 18rem;">READ MORE</a>
                </div>
            </div>
        </div>
 
     <div class="row">
         <div class="col-md-12">
-            <p class="display-6 text-black d-flex justify-content-center"> LOCAL, FAMILY-OWNED AND OPERATED HOME <br/>REMODELING COMPANY</p>
-            <hr>
+            <p class="display-6 text-black d-flex justify-content-center mt-3"> LOCAL, FAMILY-OWNED AND OPERATED HOME <br/>REMODELING COMPANY</p>
+            <hr class="border border-success border-3">
             <div class="col-md-12">
-                <p class="display-6 text-black d-flex justify-content-center">SERVING HOMEOWNERS SINCE 1990</p>
+                <p class="display-6 text-black d-flex justify-content-center"> SERVING HOMEOWNERS SINCE 1990 </p>
              <p> Midtown Home Improvements is proud to be a local, family-owned and -operated home remodeling company serving residents throughout the Greater St. Louis, Kansas City, and Nashville metro areas. With 30 years of experience in the remodeling business, we can help you achieve all your home improvement dreams – whether it’s a siding, deck, roofing or windows project. </p>
              <p> We have been recognized by the St. Louis Post-Dispatch as one of the top places to work, and we have been consistently recognized by Qualified Remodeler magazine as one of the country’s Top 500 Remodelers. Customers select us for their remodeling projects because we offer true value for your money, and we provide excellent customer service. We are an industry leader because we seek to exceed our customers’ expectations in all areas, including timeliness, attention to detail and service-minded attitude. </p>
             </div>
@@ -96,9 +96,9 @@
                 <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i> Sunrooms </li>
             </ul>
         </div>
-            <div class="col-md-12">
-                We only install high-quality materials and work hard to ensure that your desired design becomes a reality. We are proud to serve residents throughout St. Louis, Kansas City, Chicago and Nashville greater metro areas.
-            </div>
+        <div class="col-md-12">
+            We only install high-quality materials and work hard to ensure that your desired design becomes a reality. We are proud to serve residents throughout St. Louis, Kansas City, Chicago and Nashville greater metro areas.
+        </div>
     </div>
 
     <div class="row">
@@ -111,7 +111,7 @@
     <div class="row">
         <div class="col-md-12">
            <p class="display-6 d-flex justify-content-center">WHY CHOOSE US</p>
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mb-3">
                 <hr class="border border-3 border-success" style="width: 5rem;">
             </div>
         </div>
@@ -121,27 +121,27 @@
             <p class="d-flex justify-content-center">Midtown Home Improvements is a local, family-owned and -operated company that has been in business since 1990.</p>
         </div>
         <div class="col-md-4">
-            <i class="fas fa-blog fa-lg d-flex justify-content-center mb-3"></i>
+            <i class="fas fa-hands-helping fa-lg d-flex justify-content-center mb-3"></i>
             <p class="text-success d-flex justify-content-center">FULL SERVICE</p>
             <p>We can help you achieve all your home improvement dreams, from exterior projects to a total interior renovation.</p>
         </div>
       <div class="col-md-4">
-            <i class="fas fa-home fa-lg d-flex justify-content-center mb-3"></i>
+            <i class="fas fa-book-reader fa-lg d-flex justify-content-center mb-3"></i>
             <p class="text-success d-flex justify-content-center">DEDICATION</p>
             <p class="d-flex justify-content-center">We seek to exceed your expectations of timeliness, attention to detail and service-minded attitude.</p>
       </div>
         <div class="col-md-4">
-            <i class="fas fa-home fa-lg d-flex justify-content-center mb-3"></i>
+            <i class="fas fa-business-time fa-lg d-flex justify-content-center mb-3"></i>
             <p class="text-success d-flex justify-content-center">VALUE</p>
             <p class="d-flex justify-content-center">It is our commitment to always provide value for your money, ensuring that your investment is worth the expense.</p>
         </div>
         <div class="col-md-4">
-            <i class="fas fa-home fa-lg d-flex justify-content-center mb-3"></i>
+            <i class="fas fa-smile fa-lg d-flex justify-content-center mb-3"></i>
             <p class="text-success d-flex justify-content-center">SATISFACTION</p>
             <p class="d-flex justify-content-center">Read our reviews! Customers love our quality products, superior workmanship and competitive pricing.</p>
         </div>
         <div class="col-md-4">
-            <i class="fas fa-home fa-lg d-flex justify-content-center mb-3"></i>
+            <i class="fas fa-award fa-lg d-flex justify-content-center mb-3"></i>
             <p class="text-success d-flex justify-content-center">AWARDS</p>
             <p class="d-flex justify-content-center">As an industry leader in home improvement, we have received numerous recognitions for our work.</p>
         </div>
@@ -149,13 +149,13 @@
 
 
 
-    <div class="row imageshomepage">
+    <div class="row">
         <div class="col-md-12">
             <p class="display-6 d-flex justify-content-center">REMODELING PROCESS</p>
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card bg-success text-light " style="height: 45vh;">
+            <div class="card bg-success text-light " style="height: 35.5vh;">
                 <div class="card-header h6 d-flex justify-content-center">
                     <i class="far fa-clock pe-3"></i>
                     DECIDE WHAT YOUR NEXT PROJECT WILL BE
@@ -166,9 +166,9 @@
             </div>
         </div>
          <div class="col-md-4 mb-4">
-            <div class="card bg-success text-light" style="height: 45vh;">
+            <div class="card bg-success text-light" style="height: 35.5vh;">
                 <div class="card-header h6 d-flex justify-content-center">
-                    <i class="far fa-clock pe-3"></i>
+                    <i class="fas fa-phone-square-alt pe-3"></i>
                     SCHEDULE A FREE ESTIMATE
                 </div>
                 <div class="card-body">
@@ -177,9 +177,9 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card bg-success text-light" style="height: 45vh;">
+            <div class="card bg-success text-light">
                 <div class="card-header h6 d-flex justify-content-center">
-                    <i class="far fa-clock pe-3"></i>
+                    <i class="fas fa-calendar-check pe-3"></i>
                     MEET YOUR PROJECT MANAGER
                 </div>
                 <div class="card-body">
@@ -194,9 +194,9 @@
         </div>
 
          <div class="col-md-4 mb-4">
-            <div class="card bg-success text-light" style="height: 45vh;">
+            <div class="card bg-success text-light" style="height: 30vh;">
                 <div class="card-header h6 d-flex justify-content-center">
-                    <i class="far fa-clock pe-3"></i>
+                    <i class="fas fa-couch pe-3"></i>
                     RELAX WHILE WE INSTALL YOUR CUSTOM PROJECT
                 </div>
                 <div class="card-body">
@@ -205,9 +205,9 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card bg-success text-light" style="height: 45vh;">
+            <div class="card bg-success text-light" style="height: 30vh;">
                 <div class="card-header h6 d-flex justify-content-center">
-                    <i class="far fa-clock pe-3"></i>
+                    <i class="fas fa-comments pe-3"></i>
                     ENJOY YOUR CUSTOM REMODEL
                 </div>
                 <div class="card-body">
@@ -217,9 +217,9 @@
         </div>
 
         <div class="col-md-4 mb-4">
-            <div class="card bg-success text-light" style="height: 45vh;">
+            <div class="card bg-success text-light" style="height: 30vh;">
                 <div class="card-header h6 d-flex justify-content-center">
-                    <i class="far fa-clock pe-3"></i>
+                    <i class="fas fa-handshake pe-3"></i>
                     MEET WITH A TEAM MEMBER
                 </div>
                 <div class="card-body">

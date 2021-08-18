@@ -6,7 +6,7 @@
 {% block content %}
     <div class="row mb-5">
         <div class="col-md-6 d-flex justify-content-start">
-            <a class="btn btn-success btn-lg">Install at Midtown</a>
+            <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
         </div>
         <div class="col-md-6 d-flex justify-content-end">
             <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
@@ -35,7 +35,7 @@
         </div>
             <div class="col-md-6">
                 <ul class="list-group-flush">
-                    <li class="list-group-item"><a href="{% url 'pages:kitchens' %}" class="text-decoration-none text-success">Kitchen </a> & bathroom design</li>
+                    <li class="list-group-item"><a href="{% url 'pages:kitchens' %}" class="text-decoration-none text-success">Kitchen </a> & <a href="{% url 'pages:bathrooms' %}" class="text-decoration-none text-success"> bathroom </a> design</li>
                     <li class="list-group-item"> Bathroom master suites </li>
                     <li class="list-group-item"> Granite & stone countertops </li>
                     <li class="list-group-item"> Kitchen cabinetry </li>
@@ -58,11 +58,11 @@
     </div>
 
     <div class="row">
-        <col-md-12>
+        <div class="col-md-12">
             <p class="h2">WHAT SETS US APART</p>
             <p>Midtown Home Improvements has nearly 30 years of experience creating dream homes for clients. All our employees are dedicated to ensuring that your vision for your home becomes a reality. We have dedicated, job-specific installers who are experts in their fields, including skilled designers. We coordinate all projects via on-site production management.</p>
             <p>Midtown Home Improvements is client-centered, and we only use quality name-brand products. We offer comprehensive labor and material warranties, plus a Project Price Lock Guarantee. We can handle a full-gut or partial remodel. See how we can assist you by scheduling a free estimate.</p>
-        </col-md-12>
+        </div>
     </div>
 
 <div class="row">
