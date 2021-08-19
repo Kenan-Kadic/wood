@@ -19,11 +19,17 @@
             </div>
         </div>
 
-        <div class="row pb-5">
-            <div class="col-md-6 d-flex justify-content-start">
+    <!-- Remodeling Services -->
+    <section class="my-5" id="remodeling_services">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="display-6 text-black">OUR REMODELING SERVICES</p>
+                <p class="my-3">We know there are a lot of contractors around, but only a few that you can truly trust. At Midtown Home Improvements, we’re proud to continually be the general contractor to whom our customers turn. We offer home remodeling services, including the following:</p>
+            </div>
+            <div class="col-md-6 d-flex justify-content-start my-3">
                 <div class="card" style="width: 25rem;">
                     <div class="card-header h6 text-success d-flex justify-content-center">
-                        EXTERIOR OPTIONS
+                        EXTERIOR SERVICES
                     </div>
                     <div class="card-body bg-success">
                         <p><a href="{% url 'pages:decks' %}" class="text-decoration-none text-white"> Decks </a></p>
@@ -31,24 +37,36 @@
                         <p><a href="{% url 'pages:roofs' %}" class="text-decoration-none text-white"><i class="fas fa-home me-3"></i> Roofing </a></p>
                         <p><a href="{% url 'pages:sideGutter' %}" class="text-decoration-none text-white"><i class="fas fa-bars me-3"></i> Siding </a></p>
                         <p><a href="{% url 'pages:windows_doors' %}" class="text-decoration-none text-white"><i class="fas fa-city me-3"></i> Windows & Doors </a></p>
+                        <p><a href="#" class="text-decoration-none text-white">Soffit/fascia </a></p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 d-flex justify-content-end">
+            <div class="col-md-6 d-flex justify-content-end my-3">
                 <div class="card" style="width: 25rem;">
                     <div class="card-header h6 text-success d-flex justify-content-center">
-                        INTERIOR OPTIONS
+                        INTERIOR SERVICES
                     </div>
                     <div class="card-body bg-success">
                         <p><a href="{% url 'pages:kitchens' %}" class="text-decoration-none text-white"><i class="fas fa-hammer"></i> Kitchen Remodeling </a></p>
                         <p><a href="{% url 'pages:bathrooms' %}" class="text-decoration-none text-white"><i class="fas fa-bath me-3"></i> Bathroom Remodeling </a></p>
                         <p><a href="{% url 'pages:attic_insulation' %}" class="text-decoration-none text-white"> Attic Insulation </a></p>
                         <p class="text-white"><i class="fas fa-home me-3"></i> Sunrooms </p>
+                        <p><a href="{% url 'pages:interior' %}" class="text-decoration-none text-white"> Interior Remodeling </a></p>
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-12">
+                <p>We only install high-quality materials and work hard to ensure that your desired design becomes a reality. We are proud to serve residents throughout St. Louis, Kansas City, Chicago and Nashville greater metro areas.</p>
+            </div>
         </div>
+    </section>
+
+
+
+
+
        <div class="row mb-4">
            <div class="col-md-12">
                <p class="display-6 text-black d-flex justify-content-center mb-4"> ABOUT MIDTOWN HOME IMPROVEMENTS </p>
@@ -71,35 +89,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <p class="display-6 text-black">OUR REMODELING SERVICES</p>
-            <p>We know there are a lot of contractors around, but only a few that you can truly trust. At Midtown Home Improvements, we’re proud to continually be the general contractor to whom our customers turn. We offer home remodeling services, including the following:</p>
-        </div>
-            <div class="col-md-6">
-                <ul class="list-group-flush">
-                    <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:roofs' %}" class="text-success text-decoration-none"> Roof </a></li>
-                    <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:sideGutter' %}" class="text-success text-decoration-none"> Siding </a></li>
-                    <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:fencing' %}" class="text-success text-decoration-none"> Fencing </a></li>
-                    <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:decks' %}" class="text-success text-decoration-none"> Decking </a></li>
-                    <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i> Soffit/fascia </li>
-                    <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:windows_doors' %}" class="text-success text-decoration-none"> Windows </a></li>
-                </ul>
-            </div>
-        <div class="col-md-6">
-            <ul class="list-group-flush">
-                <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:windows_doors' %}" class="text-success text-decoration-none"> Doors </a></li>
-                <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i> Gutters </li>
-                <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:interior' %}" class="text-success text-decoration-none"> Interior Remodeling </a></li>
-                <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:kitchens' %}" class="text-success text-decoration-none"> Kitchen </a> & <a href="{% url 'pages:bathrooms' %}" class="text-success text-decoration-none"> Bathroom Remodels </a></li>
-                <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i><a href="{% url 'pages:attic_insulation' %}" class="text-success text-decoration-none"> Attic Insulation</a> </li>
-                <li class="list-group-item border-0"><i class="fas fa-circle fa-sm"></i> Sunrooms </li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            We only install high-quality materials and work hard to ensure that your desired design becomes a reality. We are proud to serve residents throughout St. Louis, Kansas City, Chicago and Nashville greater metro areas.
-        </div>
-    </div>
+
 
     <div class="row">
         <div class="col-md-12 p-4">
