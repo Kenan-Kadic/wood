@@ -32,6 +32,10 @@ body {
   background-color: #f5f5f5;
 }
 
+.heroimages{
+  background-image: url("/static/images/home.jpg");
+}
+
 
 
 .fade-in{
