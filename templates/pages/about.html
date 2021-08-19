@@ -4,21 +4,29 @@
 {% block title %}About page {% endblock %}
 
 {% block content %}
-    <div class="row mb-5">
-        <div class="col-md-6 d-flex justify-content-start">
-            <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
+    <!-- button on the top -->
+    <section id="top_buttons">
+        <div class="row mb-5">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
+            </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-end">
-            <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
-        </div>
-    </div>
+    </section>
 
+    <!-- about images -->
+    <section>
         <div class="row">
             <div class="col-md-12">
                 <img src="{% static 'images/hello.jpg'%}" class="card-img-top p-4" alt="hello">
             </div>
         </div>
+    </section>
 
+    <!--great STL, kansas city, Chicago, Home remodeling  -->
+    <section class="my-5">
         <div class="row">
             <div class="col-md-12">
                 <p class="display-6 d-flex justify-content-center">GREATER ST. LOUIS, KANSAS CITY, <br> NASHVILLE, CHICAGO HOME REMODELING <br> GENERAL CONTRACTOR </p>
@@ -34,8 +42,7 @@
                 </div>
             </div>
         </div>
-
-
+    </section>
 
         <!-- core values -->
     <section class="my-5" id="core_values">
@@ -88,13 +95,18 @@
             </div>
     </section>
 
+<!-- Mission Statement-->
+    <section class="my-5" id="mission_statement">
         <div class="row">
             <div class="col-md-12 bg-light">
                 <p class="h6 d-flex justify-content-center"> Mission Statement</p>
                 <p>Midtown Home Improvements’ mission is to be an industry leader in providing value- added home improvement projects. We accomplish this by exceeding customer expectations in all areas including timeliness, attention to detail and service-minded attitude. In support of this mission we hire, train and empower employees that create Raving Fans at every point of contact</p>
             </div>
         </div>
+    </section>
 
+    <!-- Home Remodeling Services -->
+    <section class="my-5" id="home_remodeling_services">
         <div class="row">
             <div class="col-md-12">
                 <p class="display-6"><b>OUR EXPERT HOME REMODELING SERVICES</b></p>
@@ -125,12 +137,16 @@
                 <p>What sets us apart from other general contractors is our commitment to always provide value for your money, ensuring that your investment is worth the expense. We are also a contractor that you can trust to get the job done on time and within budget.</p>
             </div>
         </div>
+    </section>
 
+    <!-- contact us to get started -->
+    <section class="my-5" id="contact_us_started">
         <div class="row">
             <div class="col-md-12">
                 <p class="h3">CONTACT US TO GET STARTED</p>
                 <p>Since 1990, Midtown Home Improvements has been helping residents throughout St. Louis, St. Charles, Jefferson County and the Greater Kansas City area in Missouri and Southwest Illinois. We work hard to ensure that your vision for your home becomes a reality.</p>
             </div>
         </div>
+    </section>
 
 {% endblock content %}
