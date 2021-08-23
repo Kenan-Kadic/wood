@@ -2,72 +2,86 @@
 {% load static %}
 
 {% block content %}
-
-    <div class="row">
-        <div class="col-md-12">
-            <p class="display-6 d-flex justify-content-center"> EXPERT & AFFORDABLE FENCING & <br> RAILING INSTALLATION </p>
-        </div>
-        <div class="col-md-12 d-flex justify-content-center">
-            <hr class="border border-3 border-success" style="width:5rem;">
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <p class="h3"> SERVING THE GREATER KANSAS CITY & ST. LOUIS AREAS </p>
-        </div>
-        <div class="col-md-12">
-            <img src="{% static 'images/fencing.jpg' %}" class="card-img p-4" alt="fencing">
-            <p> As a leader in the industry, Kroy is one of the most-respected manufacturers of vinyl fencing and railings. Midtown Home Improvements proudly offers this product line to our residential customers. Plus, we take this a step further to make your deck the best by custom fabricating all fences and rails. Featuring gorgeous designs and a number of color schemes, Kroy products also come with a limited lifetime warranty, providing support for years after the initial purchase.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12 p-3">
-            <div class="ratio ratio-21x9">
-                <iframe src="https://www.youtube.com/embed/c8aQCO22D_4" title="YouTube video player" allowfullscreen></iframe>
+    <!-- top title expert & affordable -->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="display-6 d-flex justify-content-center"> EXPERT & AFFORDABLE FENCING & <br> RAILING INSTALLATION </p>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <hr class="border border-3 border-success" style="width:5rem;">
             </div>
         </div>
-        <div class="col-md-12">
-            <p>Kroy vinyl fencing and railings feature:</p>
-        </div>
-        <div class="col-md-12">
-            <ul class="list-group-flush">
-                <li class="list-group-item"> A crisp, clean look that lasts for years. </li>
-                <li class="list-group-item"> Low-maintenance, minimal work with maximum beauty. </li>
-                <li class="list-group-item"> No warping, splintering, cracking or peeling. </li>
-                <li class="list-group-item"> A long lifespan, which means you save money by not having to deal with repairs and replacements. </li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <p> If you’re interested in this product, we can happily discuss your needs when you schedule a free estimate. </p>
-        </div>
-    </div>
+    </section>
 
-    <div class="row">
-        <div class="col-md-12">
-            <p class="h3"> ADVANTAGES OF MIDTOWN HOME IMPROVEMENTS FENCES </p>
-            <p> Since 1990, Midtown Home Improvements has been helping residents throughout the Greater St. Louis and Kansas City areas create their dream homes. We only offer the highest-quality products, including fencing that features the following qualities: </p>
+    <!-- Serving the greater kansas city and image -->
+    <section class="my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="h3"> SERVING THE GREATER KANSAS CITY & ST. LOUIS AREAS </p>
+            </div>
+            <div class="col-md-12">
+                <img src="{% static 'images/fencing.jpg' %}" class="card-img p-4" alt="fencing">
+                <p> As a leader in the industry, Kroy is one of the most-respected manufacturers of vinyl fencing and railings. Midtown Home Improvements proudly offers this product line to our residential customers. Plus, we take this a step further to make your deck the best by custom fabricating all fences and rails. Featuring gorgeous designs and a number of color schemes, Kroy products also come with a limited lifetime warranty, providing support for years after the initial purchase.</p>
+            </div>
         </div>
-        <div class="col-md-12">
-            <ul class="list-group-flush">
-                <li class="list-group-item"> Endless styles to choose from, including privacy fences, picket fences, pool fences and more. </li>
-                <li class="list-group-item"> A lifetime transferable manufacturer’s warranty. </li>
-                <li class="list-group-item"> Custom fabrication, which means no unsightly fasteners. </li>
-            </ul>
-        </div>
-        <div class="col-md-12">
-            <p> Midtown will take care of all the permits, so you have one less thing to handle on your end. We are a full-service remodeling company. We have over 40 full-time employees and over 30 part-time employees, and can assist you with any exterior project. </p>
-        </div>
-    </div>
+    </section>
 
-    <div class="row">
-        <div class="col-md-12">
-            <p class="h3"> GET YOUR FENCING PROJECT STARTED TODAY! </p>
+    <!-- video and kroy vinyl fencing and railing features -->
+    <section class="my-5">
+        <div class="row">
+            <div class="col-md-12 p-3">
+                <div class="ratio ratio-21x9">
+                    <iframe src="https://www.youtube.com/embed/c8aQCO22D_4" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <p>Kroy vinyl fencing and railings feature:</p>
+            </div>
+            <div class="col-md-12">
+                <ul class="list-group-flush">
+                    <li class="list-group-item"> A crisp, clean look that lasts for years. </li>
+                    <li class="list-group-item"> Low-maintenance, minimal work with maximum beauty. </li>
+                    <li class="list-group-item"> No warping, splintering, cracking or peeling. </li>
+                    <li class="list-group-item"> A long lifespan, which means you save money by not having to deal with repairs and replacements. </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p> If you’re interested in this product, we can happily discuss your needs when you schedule a free estimate. </p>
+            </div>
         </div>
-        <div class="col-md-12">
-            <p>With nearly 30 years of experience, Midtown Home Improvements is your go-to home remodeling contractor. We offer free estimates, which includes a home inspection. Call us at <strong class="text-success">(816) 246-8589</strong> in O’Fallon, MO, or at <strong class="text-success">(636) 379-8889</strong> in Lee’s Summit, MO. You can also fill out our online form to <a href="{% url 'pages:contact' %}" class="text-success text-decoration-none">schedule an appointment today.</a> We look forward to learning more about your project and how we can assist you! </p>
+    </section>
+
+    <!-- advantages of midtown home improvements -->
+    <section class="my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="h3"> ADVANTAGES OF MIDTOWN HOME IMPROVEMENTS FENCES </p>
+                <p> Since 1990, Midtown Home Improvements has been helping residents throughout the Greater St. Louis and Kansas City areas create their dream homes. We only offer the highest-quality products, including fencing that features the following qualities: </p>
+            </div>
+            <div class="col-md-12">
+                <ul class="list-group-flush">
+                    <li class="list-group-item"> Endless styles to choose from, including privacy fences, picket fences, pool fences and more. </li>
+                    <li class="list-group-item"> A lifetime transferable manufacturer’s warranty. </li>
+                    <li class="list-group-item"> Custom fabrication, which means no unsightly fasteners. </li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <p> Midtown will take care of all the permits, so you have one less thing to handle on your end. We are a full-service remodeling company. We have over 40 full-time employees and over 30 part-time employees, and can assist you with any exterior project. </p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Get your fencing project today -->
+    <section class="my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="h3"> GET YOUR FENCING PROJECT STARTED TODAY! </p>
+            </div>
+            <div class="col-md-12">
+                <p>With nearly 30 years of experience, Midtown Home Improvements is your go-to home remodeling contractor. We offer free estimates, which includes a home inspection. Call us at <strong class="text-success">(816) 246-8589</strong> in O’Fallon, MO, or at <strong class="text-success">(636) 379-8889</strong> in Lee’s Summit, MO. You can also fill out our online form to <a href="{% url 'pages:contact' %}" class="text-success text-decoration-none">schedule an appointment today.</a> We look forward to learning more about your project and how we can assist you! </p>
+            </div>
+        </div>
+    </section>
 
 {% endblock %}
