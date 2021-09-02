@@ -53,3 +53,6 @@ def installMidtownPageView(request):
 
 def awardsPageView(request):
     return render(request, 'pages/award.html')
+
+def galleryPageView(request):
+    return render(request, 'pages/gallery.html')
