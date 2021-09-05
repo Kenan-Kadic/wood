@@ -4,21 +4,29 @@
 {% block title %}About page {% endblock %}
 
 {% block content %}
-    <div class="row mb-5">
-        <div class="col-md-6 d-flex justify-content-start">
-            <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
-        </div>
-        <div class="col-md-6 d-flex justify-content-end">
-            <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
-        </div>
-    </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <img src="{% static 'images/hello.jpg'%}" class="card-img-top p-4" alt="hello">
+    <!-- button on the top -->
+    <section id="top_buttons">
+        <div class="row mb-5">
+            <div class="col-md-6 d-flex justify-content-start">
+                <a href="{% url 'pages:install_midtown' %}" class="btn btn-success btn-lg">Install at Midtown</a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-end">
+                <a href="{% url 'pages:work_midtown' %}" class="btn btn-success btn-lg">Apply at Midtown</a>
             </div>
         </div>
+    </section>
 
+    <!-- about images -->
+    <section>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="https://lirp.cdn-website.com/c6745897/dms3rep/multi/opt/93214C75-154F-4893-B2CD-99B4037B42C7-1920w-2880w.jpeg" class="card-img-top p-4" alt="hello">
+            </div>
+        </div>
+    </section>
+
+    <!--great STL, kansas city, Chicago, Home remodeling  -->
+    <section class="my-5">
         <div class="row">
             <div class="col-md-12">
                 <p class="display-6 d-flex justify-content-center">GREATER ST. LOUIS, KANSAS CITY, <br> NASHVILLE, CHICAGO HOME REMODELING <br> GENERAL CONTRACTOR </p>
@@ -34,80 +42,71 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="row">
-            <div class="col-md-12">
-                <p>As an industry leader in home improvement projects, we have received numerous recognitions for our work. We know that our customers are the reason that we’re in business, and we strive to exceed customer expectations every time. We have 40 full-time and 30 part-time employees, which means that we can take on any size job, no matter how big or small. All our employees are fully committed and are held accountable to the following family values:</p>
-            </div>
-            <div class="col-md-4 pb-3">
-               <div class="card bg-success text-light" style="height: 19rem;">
-                    <div class="card-header h6 d-flex justify-content-center">
-                        Growth Oriented
+        <!-- core values -->
+    <section class="my-5" id="core_values">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>As an industry leader in home improvement projects, we have received numerous recognitions for our work. We know that our customers are the reason that we’re in business, and we strive to exceed customer expectations every time. We have 40 full-time and 30 part-time employees, which means that we can take on any size job, no matter how big or small. All our employees are fully committed and are held accountable to the following family values:</p>
+                </div>
+                 <div class="col-md-4 mb-3">
+                    <p class="text-success d-flex justify-content-center"> Growth Oriented </p>
+                     <div class="d-flex justify-content-center">
+                        <hr class="border border-3 border-success" style="width: 5rem;">
                     </div>
-                    <div class="card-body">
-                        <p> Sincere Willingness to evolve, increase personal knowledge to the fullest; therefore serving the greater good by creating unified company growth and long-term seamless sustainability. </p>
+                    <p class="d-flex justify-content-center"> Sincere Willingness to evolve, increase personal knowledge to the fullest; therefore serving the greater good by creating unified company growth and long-term seamless sustainability.  </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p class="text-success d-flex justify-content-center"> Gratitude </p>
+                    <div class="d-flex justify-content-center">
+                        <hr class="border border-3 border-success" style="width: 5rem;">
                     </div>
+                    <p class="d-flex justify-content-center"> Demonstrate your appreciation through proper personal action toward fellow workers, clients, our business and industry as a whole </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p class="text-success d-flex justify-content-center"> Positive Character </p>
+                    <div class="d-flex justify-content-center">
+                        <hr class="border border-3 border-success" style="width: 5rem;">
+                    </div>
+                    <p class="d-flex justify-content-center"> A positive culture of 100% accountability run by confident, effective, and highly responsible people. An enviroment where everyone demonstrates appreciation, pleasing attitudes, and are compassionate and respectful towards all co-workers and clients in a fun climate. </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p class="text-success d-flex justify-content-center"> Dedication </p>
+                    <div class="d-flex justify-content-center">
+                        <hr class="border border-3 border-success" style="width: 5rem;">
+                    </div>
+                    <p class="d-flex justify-content-center"> A culture that demonstrates commitment, loyalty, and devotion to client happiness, while incorporating strong work ethic, no excuses, and adopting a win-win attitude. </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p class="text-success d-flex justify-content-center"> Initiative </p>
+                    <div class="d-flex justify-content-center">
+                        <hr class="border border-3 border-success" style="width: 5rem;">
+                    </div>
+                    <p class="d-flex justify-content-center"> Doing things well consistently without being told, therefore eliminating procrastination to properly serve our clientele in a unified and timely effort. </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p class="text-success d-flex justify-content-center"> Trust </p>
+                    <div class="d-flex justify-content-center">
+                        <hr class="border border-3 border-success" style="width: 5rem;">
+                    </div>
+                    <p class="d-flex justify-content-center"> Must start at the highest level of our organization and stream throughout it. Trust is the firm belief in the reliability, truth, ability, and strength in each of us. It must be earned by all and protected as a key foundation building block which supports all other Midtown Family Values. </p>
                 </div>
             </div>
-            <div class="col-md-4 pb-3">
-               <div class="card bg-success text-light" style="height: 19rem;">
-                    <div class="card-header h6 d-flex justify-content-center">
-                        Gratitude
-                    </div>
-                    <div class="card-body">
-                        <p> Demonstrate your appreciation through proper personal action toward fellow workers, clients, our business and industry as a whole </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-3">
-               <div class="card bg-success text-light" style="height: 19rem;">
-                    <div class="card-header h6 d-flex justify-content-center">
-                        Positive Character
-                    </div>
-                    <div class="card-body">
-                        <p> A positive culture of 100% accountability run by confident, effective, and highly responsible people. An enviroment where everyone demonstrates appreciation, pleasing attitudes, and are compassionate and respectful towards all co-workers and clients in a fun climate. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-3">
-               <div class="card bg-success text-light" style="height: 19rem;">
-                    <div class="card-header h6 d-flex justify-content-center">
-                        Dedication
-                    </div>
-                    <div class="card-body">
-                        <p> A culture that demonstrates commitment, loyalty, and devotion to client happiness, while incorporating strong work ethic, no excuses, and adopting a win-win attitude. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-3">
-               <div class="card bg-success text-light" style="height: 19rem;">
-                    <div class="card-header h6 d-flex justify-content-center">
-                        Initiative
-                    </div>
-                    <div class="card-body">
-                        <p> Doing things well consistently without being told, therefore eliminating procrastination to properly serve our clientele in a unified and timely effort. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-3">
-               <div class="card bg-success text-light" style="height: 19rem;">
-                    <div class="card-header h6 d-flex justify-content-center">
-                        Trust
-                    </div>
-                    <div class="card-body">
-                        <p> Must start at the highest level of our organization and stream throughout it. Trust is the firm belief in the reliability, truth, ability, and strength in each of us. It must be earned by all and protected as a key foundation building block which supports all other Midtown Family Values.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </section>
 
+<!-- Mission Statement-->
+    <section class="my-5" id="mission_statement">
         <div class="row">
             <div class="col-md-12 bg-light">
                 <p class="h6 d-flex justify-content-center"> Mission Statement</p>
                 <p>Midtown Home Improvements’ mission is to be an industry leader in providing value- added home improvement projects. We accomplish this by exceeding customer expectations in all areas including timeliness, attention to detail and service-minded attitude. In support of this mission we hire, train and empower employees that create Raving Fans at every point of contact</p>
             </div>
         </div>
+    </section>
 
+    <!-- Home Remodeling Services -->
+    <section class="my-5" id="home_remodeling_services">
         <div class="row">
             <div class="col-md-12">
                 <p class="display-6"><b>OUR EXPERT HOME REMODELING SERVICES</b></p>
@@ -138,12 +137,16 @@
                 <p>What sets us apart from other general contractors is our commitment to always provide value for your money, ensuring that your investment is worth the expense. We are also a contractor that you can trust to get the job done on time and within budget.</p>
             </div>
         </div>
+    </section>
 
+    <!-- contact us to get started -->
+    <section class="my-5" id="contact_us_started">
         <div class="row">
             <div class="col-md-12">
                 <p class="h3">CONTACT US TO GET STARTED</p>
                 <p>Since 1990, Midtown Home Improvements has been helping residents throughout St. Louis, St. Charles, Jefferson County and the Greater Kansas City area in Missouri and Southwest Illinois. We work hard to ensure that your vision for your home becomes a reality.</p>
             </div>
         </div>
+    </section>
 
 {% endblock content %}
