@@ -56,3 +56,5 @@ def awardsPageView(request):
 
 def galleryPageView(request):
     return render(request, 'pages/gallery.html')
+def reviewPageView(request):
+    return render(request, 'pages/review.html')
