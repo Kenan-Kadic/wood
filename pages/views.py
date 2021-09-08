@@ -62,3 +62,6 @@ def reviewPageView(request):
 
 def videosPageView(request):
     return render(request, 'pages/videos.html')
+
+def kansasPageView(request):
+    return render(request, 'pages/tenessee.html')
