@@ -33,7 +33,7 @@ body {
 }
 
 .herohomes{
-  background-image: url("/static/images/homepage2.jpg");
+  background-image: url("/static/images/homepage2.1.jpg");
 }
 
 
@@ -64,6 +64,9 @@ body {
 }
 .fade-in9{
   animation: fadeIn 1s; /* fade animation for the award page */
+}
+.fade-in10{
+  animation: fadeIn 1.1s; /* fade animation for the award page */
 }
 @keyframes fadeIn {   /* keyframes for the fade animation */
   from {

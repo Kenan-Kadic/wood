@@ -53,3 +53,15 @@ def installMidtownPageView(request):
 
 def awardsPageView(request):
     return render(request, 'pages/award.html')
+
+def galleryPageView(request):
+    return render(request, 'pages/gallery.html')
+
+def reviewPageView(request):
+    return render(request, 'pages/review.html')
+
+def videosPageView(request):
+    return render(request, 'pages/videos.html')
+
+def kansasPageView(request):
+    return render(request, 'pages/tenessee.html')
