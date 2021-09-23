@@ -1,4 +1,4 @@
-import { Tooltip } from '../../../dist/js/bootstrap.esm.js'
+import { Tooltip } from '../../../../../../../../../Downloads/bootstrap-5.0.2'
 
 window.addEventListener('load', () => {
   [].concat(...document.querySelectorAll('[data-bs-toggle="tooltip"]'))

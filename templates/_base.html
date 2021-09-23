@@ -2,147 +2,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<title>{% block title %}Midtown Home Improvements{% endblock title %}</title>
-<meta name="description" content="The Midwest's premier home improvement choice.">
-<meta name="author" content="Midtown Home Improvements">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>{% block title %}Midtown Home Improvements{% endblock title %}</title>
+    <meta name="description" content="The Midwest's premier home improvement choice.">
+    <meta name="author" content="Midtown Home Improvements">
 
-{% block css %}
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!-- Font Awesome CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block css %}
+        <!-- Bootstrap CSS -->
+        {#<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">#}
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<link rel="stylesheet" href="{% static 'css/base.css' %}">
-{#    <link rel="stylesheet" href="{% static 'scss/custom.css' %}">#}
-{% endblock %}
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        {#    <link rel="stylesheet" href="{% static 'scss/custom.css' %}">#}
+    {% endblock %}
 </head>
 
 <body>
-
-<div class="container-fluid">
-    <!-- Store Top Part -->
-    <div class="container-fluid bg-dark text-light">
-        <div class="container p-3 small">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="col-10">
-                            <p class="m-0"> 120 Resource Dr </p>
-                            <p class="m-0"> Wentzville, <br/> MO 63385 </p>
-                            <p class="m-0"> <strong class="text-success"> (636) 379-8889 </strong></p>
-                        </div>
+<!-- Store Top Part -->
+<div class="container-fluid bg-dark text-light">
+    <div class="container p-3 small">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="col-10">
+                        <p class="m-0"> 120 Resource Dr </p>
+                        <p class="m-0"> Wentzville, <br/> MO 63385 </p>
+                        <p class="m-0"> <strong class="text-success"> (636) 379-8889 </strong></p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="col-10">
-                            <p class="m-0"> 555 NW Blue Pkwy <br/> Suite B </p>
-                            <p class="m-0"> Lee's Summit, MO 64063 </p>
-                            <p class="m-0"> <strong class="text-success"> (816) 249-8589</strong></p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="col-10">
+                        <p class="m-0"> 555 NW Blue Pkwy <br/> Suite B </p>
+                        <p class="m-0"> Lee's Summit, MO 64063 </p>
+                        <p class="m-0"> <strong class="text-success"> (816) 249-8589</strong></p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="col-10">
-                            <p class="m-0"> 1400 Donelson Pike <br/> Suite A20 </p>
-                            <p class="m-0"> Nashville, TN 37127 </p>
-                            <p class="m-0"> <strong class="text-success">(615) 915-1285</strong> </p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="col-10">
+                        <p class="m-0"> 1400 Donelson Pike <br/> Suite A20 </p>
+                        <p class="m-0"> Nashville, TN 37127 </p>
+                        <p class="m-0"> <strong class="text-success">(615) 915-1285</strong> </p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="col-10">
-                            <p class="m-0"> 945 N Edgewood Ave </p>
-                            <p class="m-0"> Wood Dale, <br/> IL 60191 </p>
-                            <p class="m-0"> <strong class="text-success">(630) 473-4165 </strong></p>
-                        </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="col-10">
+                        <p class="m-0"> 945 N Edgewood Ave </p>
+                        <p class="m-0"> Wood Dale, <br/> IL 60191 </p>
+                        <p class="m-0"> <strong class="text-success">(630) 473-4165 </strong></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Begin Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"> HOME </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ABOUT US </a>
-                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:about' %}"> OVERVIEW </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:gallery' %}"> GALLERY </a></li>
-                            <li><a class="dropdown-item text-success" href="#"> BLOG </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:videos' %}"> VIDEOS </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:review' %}"> REVIEWS </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                       <a class="nav-link active dropdown-toggle"  id="navbarDropdownExterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EXTERIOR </a>
-                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior">
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:exterior' %}">OVERVIEW </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:decks' %}"> DECK UNDERDECKING</a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:fencing' %}"> FENCING </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:roofs' %}"> ROOFS </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:sideGutter' %}"> SINDING-GUTTER </a> </li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:windows_doors' %}"> WINDOWS & DOORS </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" id="navbarDropdownInterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INTERIOR </a>
-                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownInterior">
-                            <Li><a class="dropdown-item text-success" href="{% url 'pages:interior' %}"> OVERVIEW </a></Li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:kitchens' %}"> KITCHENS </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:bathrooms' %}"> BATHROOMS </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:attic_insulation' %}"> ATTIC INSULATION </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" id="navbarDropdownAreas" role="button" data-bs-toggle="dropdown" aria-expanded="false"> AREAS WE SERVE </a>
-                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownAreas">
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:areasweserve' %}"> OVERVIEW </a></li>
-                            <li><a class="dropdown-item text-success" role="button"> ILLINOIS </a></li>
-                            <li><a class="dropdown-item text-success" href="{% url 'pages:kansas' %}"> KANSAS </a></li>
-                            <Li><a class="dropdown-item text-success"> MISSOURI </a></Li>
-                            <li><a class="dropdown-item text-success"> TENNESSEE </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT US</a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link active" href="{% url 'pages:financing' %}">FINANCING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'pages:awards_midtown' %}">OUR AWARDS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 </div>
 
 
-    {% block content %}
+
+<!-- Begin Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"> HOME </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ABOUT US </a>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:about' %}"> OVERVIEW </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:gallery' %}"> GALLERY </a></li>
+                        <li><a class="dropdown-item text-success" href="#"> BLOG </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:videos' %}"> VIDEOS </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:review' %}"> REVIEWS </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle"  id="navbarDropdownExterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EXTERIOR </a>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior">
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:exterior' %}">OVERVIEW </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:decks' %}"> DECK UNDERDECKING</a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:fencing' %}"> FENCING </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:roofs' %}"> ROOFS </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:sideGutter' %}"> SINDING-GUTTER </a> </li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:windows_doors' %}"> WINDOWS & DOORS </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" id="navbarDropdownInterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INTERIOR </a>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownInterior">
+                        <Li><a class="dropdown-item text-success" href="{% url 'pages:interior' %}"> OVERVIEW </a></Li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:kitchens' %}"> KITCHENS </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:bathrooms' %}"> BATHROOMS </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:attic_insulation' %}"> ATTIC INSULATION </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" id="navbarDropdownAreas" role="button" data-bs-toggle="dropdown" aria-expanded="false"> AREAS WE SERVE </a>
+                    <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownAreas">
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:areasweserve' %}"> OVERVIEW </a></li>
+                        <li><a class="dropdown-item text-success" role="button"> ILLINOIS </a></li>
+                        <li><a class="dropdown-item text-success" href="{% url 'pages:kansas' %}"> KANSAS </a></li>
+                        <Li><a class="dropdown-item text-success"> MISSOURI </a></Li>
+                        <li><a class="dropdown-item text-success"> TENNESSEE </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'pages:financing' %}">FINANCING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'pages:awards_midtown' %}">OUR AWARDS</a>
+                </li>
+            </ul>
+        </div>
+            </div>
+    </nav>
 
 
-    {% endblock content %}
+{% block content %}
+
+
+{% endblock content %}
 
 
 <!--contact us-->
@@ -237,90 +236,90 @@
 <!-- Button trigger modal -->
 <div class="container-fluid d-flex justify-content-end fixed-bottom mb-2">
     <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Contact US
+        Contact US
     </button>
 </div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-        <div class="modal-body">
-            <form class="row">
-                <div class="col-md-4">
-                    <label for="firstName" class="form-label"> First Name: </label>
-                    <input type="text" class="form-control border-2" id="firstName">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="row">
+                    <div class="col-md-4">
+                        <label for="firstName" class="form-label"> First Name: </label>
+                        <input type="text" class="form-control border-2" id="firstName">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="lastName" class="form-label"> Last Name: </label>
+                        <input type="text" class="form-control border-2" id="lastName">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone" class="form-label"> Phone: </label>
+                        <input type="text" class="form-control border-2" id="phone">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control border-2" id="email">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Product Interest</label>
+                        <select class="form-select border-2" aria-label="Default select example">
+                            <option selected disabled hidden value></option>
+                            <option value="bathroomRemodeler"> Bathroom Remodeler </option>
+                            <option value="deckBuilder"> Deck Builder </option>
+                            <option value="fenceContractor"> Fence Contractor </option>
+                            <option value="sidingContractor"> Siding Contractor </option>
+                            <option value="roofingContractor"> Roofing Contractor </option>
+                            <option value="windowsInstallationService"> Windows Installation Service </option>
+                            <option value="kitchenRemodeler"> Kitchen Remodeler </option>
+                            <option value="sunroom"> Sunroom </option>
+                            <option value="patioCover"> Patio Cover </option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">How did you hear about us?</label>
+                        <select class="form-select border-2" aria-label="Default select example">
+                            <option selected hidden value></option>
+                            <option value="online"> Online </option>
+                            <option value="flyer/canvasser"> Flyer/Canvasser </option>
+                            <option value="phone"> Phone </option>
+                            <option value="radio"> Radio </option>
+                            <option value="referral"> Referal </option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="message" class="form-label"> Message: </label>
+                        <textarea class="form-control border-2" id="message" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="col-md-12 d-flex justify-content-center pb-4">
+                    <button type="submit" class="btn btn-success">Submit</button>
                 </div>
-                <div class="col-md-4">
-                    <label for="lastName" class="form-label"> Last Name: </label>
-                    <input type="text" class="form-control border-2" id="lastName">
-                </div>
-                <div class="col-md-4">
-                    <label for="phone" class="form-label"> Phone: </label>
-                    <input type="text" class="form-control border-2" id="phone">
-                </div>
-                <div class="col-md-4">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control border-2" id="email">
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Product Interest</label>
-                    <select class="form-select border-2" aria-label="Default select example">
-                        <option selected disabled hidden value></option>
-                        <option value="bathroomRemodeler"> Bathroom Remodeler </option>
-                        <option value="deckBuilder"> Deck Builder </option>
-                        <option value="fenceContractor"> Fence Contractor </option>
-                        <option value="sidingContractor"> Siding Contractor </option>
-                        <option value="roofingContractor"> Roofing Contractor </option>
-                        <option value="windowsInstallationService"> Windows Installation Service </option>
-                        <option value="kitchenRemodeler"> Kitchen Remodeler </option>
-                        <option value="sunroom"> Sunroom </option>
-                        <option value="patioCover"> Patio Cover </option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">How did you hear about us?</label>
-                    <select class="form-select border-2" aria-label="Default select example">
-                        <option selected hidden value></option>
-                        <option value="online"> Online </option>
-                        <option value="flyer/canvasser"> Flyer/Canvasser </option>
-                        <option value="phone"> Phone </option>
-                        <option value="radio"> Radio </option>
-                        <option value="referral"> Referal </option>
-                    </select>
-                </div>
-                <div class="col-md-12">
-                    <label for="message" class="form-label"> Message: </label>
-                    <textarea class="form-control border-2" id="message" rows="3"></textarea>
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <div class="col-md-12 d-flex justify-content-center pb-4">
-                <button type="submit" class="btn btn-success">Submit</button>
             </div>
         </div>
     </div>
-  </div>
 </div>
 
 
-  
 
-  {% block javascript %}
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- 3rd party JavaScript -->
+{% block javascript %}
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-  <!-- Project JS -->
-  <script src="{% static 'js/base.js' %}"></script>
+    <!-- 3rd party JavaScript -->
 
-  {% endblock javascript %}
+    <!-- Project JS -->
+    <script src="{% static 'js/base.js' %}"></script>
+
+{% endblock javascript %}
 
 </body>
 </html>

@@ -1,0 +1,24 @@
+$theme-colors: (
+        "primary": #0074d9,
+        "secondary": #6c757d,
+        "success": #198754,
+        "info": #0dcaf0,
+        "warning": #ffc107,
+        "light": #f8f9fa,
+        "danger": #ff4136,
+        "green": #258c55,
+        "dark": #463f3a,
+        "blue": #0075f2,
+        "cedar": #db504a,
+        "ghost": #e8e9f3,
+);
+
+
+.clip-home {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0% 80%);
+  //clip-path: polygon(0 0, 100% 0, 100% 80%, 75% 85%, 50% 100%, 25% 85%, 0 80%);
+  //clip-path: circle(70% at 50% -40%);
+}
+
+@import '../vendors/bootstrap5/scss/bootstrap';
+
