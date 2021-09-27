@@ -22,46 +22,46 @@
 
 <body>
 <!-- Store Top Part -->
-<div class="container-fluid bg-dark text-light">
+<div class="d-none d-lg-block container-fluid bg-dark text-light">
     <div class="container p-3 small">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="row my-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="row my-3">
+                    <div class="col-md-2"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="col-10">
                         <p class="m-0"> 120 Resource Dr </p>
-                        <p class="m-0"> Wentzville, <br/> MO 63385 </p>
-                        <p class="m-0"> <strong class="text-success"> (636) 379-8889 </strong></p>
+                        <p class="m-0"> Wentzville, MO 63385 </p>
+                        <p class="m-0 fw-bold"><mark class="bg-green">(636) 379-8889</mark></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row my-3">
+                    <div class="col-md-2"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="col-10">
                         <p class="m-0"> 555 NW Blue Pkwy <br/> Suite B </p>
                         <p class="m-0"> Lee's Summit, MO 64063 </p>
-                        <p class="m-0"> <strong class="text-success"> (816) 249-8589</strong></p>
+                        <p class="m-0 fw-bold"><mark class="bg-green">(816) 249-8589</mark></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row my-3">
+                    <div class="col-md-2"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="col-10">
                         <p class="m-0"> 1400 Donelson Pike <br/> Suite A20 </p>
                         <p class="m-0"> Nashville, TN 37127 </p>
-                        <p class="m-0"> <strong class="text-success">(615) 915-1285</strong> </p>
+                        <p class="m-0 fw-bold"><mark class="bg-green">(615) 915-1285</mark></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-2"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="col-md-6 col-lg-3">
+                <div class="row my-3">
+                    <div class="col-md-2"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="col-10">
                         <p class="m-0"> 945 N Edgewood Ave </p>
-                        <p class="m-0"> Wood Dale, <br/> IL 60191 </p>
-                        <p class="m-0"> <strong class="text-success">(630) 473-4165 </strong></p>
+                        <p class="m-0"> Wood Dale, IL 60191 </p>
+                        <p class="m-0 fw-bold"><mark class="bg-green">(630) 473-4165</mark></p>
                     </div>
                 </div>
             </div>
@@ -72,9 +72,9 @@
 
 
 <!-- Begin Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-        <a class="navbar-brand" href="#"><i class="fas fa-home"></i></a>
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img height="35px" src="{% static 'images/logo.png' %}" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -83,6 +83,7 @@
                 <li class="nav-item active">
                     <a class="nav-link active" aria-current="page" href="{% url 'pages:home' %}"> HOME </a>
                 </li>
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> ABOUT US </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
@@ -93,6 +94,9 @@
                         <li><a class="dropdown-item text-success" href="{% url 'pages:review' %}"> REVIEWS </a></li>
                     </ul>
                 </li>
+               -->
+
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle"  id="navbarDropdownExterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> EXTERIOR </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownExterior">
@@ -104,6 +108,9 @@
                         <li><a class="dropdown-item text-success" href="{% url 'pages:windows_doors' %}"> WINDOWS & DOORS </a></li>
                     </ul>
                 </li>
+                -->
+
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" id="navbarDropdownInterior" role="button" data-bs-toggle="dropdown" aria-expanded="false"> INTERIOR </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownInterior">
@@ -113,6 +120,9 @@
                         <li><a class="dropdown-item text-success" href="{% url 'pages:attic_insulation' %}"> ATTIC INSULATION </a></li>
                     </ul>
                 </li>
+                -->
+
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link active dropdown-toggle" id="navbarDropdownAreas" role="button" data-bs-toggle="dropdown" aria-expanded="false"> AREAS WE SERVE </a>
                     <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownAreas">
@@ -123,8 +133,10 @@
                         <li><a class="dropdown-item text-success"> TENNESSEE </a></li>
                     </ul>
                 </li>
+                -->
+
                 <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT US</a>
+                    <a href="#" class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT US</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="{% url 'pages:financing' %}">FINANCING</a>
@@ -134,8 +146,8 @@
                 </li>
             </ul>
         </div>
-            </div>
-    </nav>
+    </div>
+</nav>
 
 
 {% block content %}
@@ -144,99 +156,86 @@
 {% endblock content %}
 
 
-<!--contact us-->
-<!--
-    <div class="container-fluid bg-info">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="d-flex justify-content-center display-6">Contact Us</p>
-            </div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light clip-footer">
+    <!--
+
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+        <div class="me-5 d-none d-lg-block">
+            {# <span>We're on socials:</span> #}
         </div>
-        <form class="row">
-            <div class="col-md-4">
-                <label for="firstName" class="form-label"> First Name: </label>
-                <input type="text" class="form-control border-2" id="firstName">
-            </div>
-            <div class="col-md-4">
-                <label for="lastName" class="form-label"> Last Name: </label>
-                <input type="text" class="form-control border-2" id="lastName">
-            </div>
-            <div class="col-md-4">
-                <label for="phone" class="form-label"> Phone: </label>
-                <input type="text" class="form-control border-2" id="phone">
-            </div>
-            <div class="col-md-4">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control border-2" id="email">
-            </div>
-             <div class="col-md-4">
-                 <label class="form-label">Product Interest</label>
-                 <select class="form-select border-2" aria-label="Default select example">
-                     <option selected disabled hidden value></option>
-                     <option value="bathroomRemodeler"> Bathroom Remodeler </option>
-                     <option value="deckBuilder"> Deck Builder </option>
-                     <option value="fenceContractor"> Fence Contractor </option>
-                     <option value="sidingContractor"> Siding Contractor </option>
-                     <option value="roofingContractor"> Roofing Contractor </option>
-                     <option value="windowsInstallationService"> Windows Installation Service </option>
-                     <option value="kitchenRemodeler"> Kitchen Remodeler </option>
-                     <option value="sunroom"> Sunroom </option>
-                     <option value="patioCover"> Patio Cover </option>
-                 </select>
-             </div>
-            <div class="col-md-4">
-                <label class="form-label">How did you hear about us?</label>
-                <select class="form-select border-2" aria-label="Default select example">
-                    <option selected hidden value></option>
-                    <option value="online"> Online </option>
-                    <option value="flyer/canvasser"> Flyer/Canvasser </option>
-                    <option value="phone"> Phone </option>
-                    <option value="radio"> Radio </option>
-                    <option value="referral"> Referal </option>
-                </select>
-            </div>
-            <div class="col-md-12">
-                <label for="message" class="form-label"> Message: </label>
-                <textarea class="form-control border-2" id="message" rows="3"></textarea>
-            </div>
-            <div class="col-md-12">
-                <label class="form-label"> Select a Location </label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="o'Fallon">
-                    <label class="form-check-label" for="o'Fallon"> O'Fallon (St. Louis) </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="lee'sSummit">
-                    <label class="form-check-label" for="lee'sSummit"> Lee's Summit (Kansas City)</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="nashville">
-                    <label class="form-check-label" for="nashville"> Nashville </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="woodDale">
-                    <label class="form-check-label" for="woodDale"> Wood Dale (Chicago) </label>
-                </div>
-            </div>
-            <div class="col-md-12 d-flex justify-content-center pb-4">
-                <button type="submit" class="btn btn-success">Submit</button>
-            </div>
-        </form>
-        <div class="row">
-            <div class="col-md-12 display-6 d-flex justify-content-center">
-                DON'T HESITATE. WE’RE HERE TO HELP!
-            </div>
-            <div class="col-md-12 d-flex justify-content-center">
-               <a href="{% url 'pages:areasweserve' %}" class=" text-success text-decoration-none">Sitemap</a>
-            </div>
-        </div>
-    </div>
+
+    </section>
     -->
+
+    <!-- Section: Links  -->
+    <section>
+        <div class="container text-center text-md-start pt-5">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto my-4">
+                    <!-- Content -->
+                    <h6 class="fw-bold text-uppercase">Midtown Home Improvements</h6>
+                    <p>Since 1990, Midtown has been your local, family owned and operated home remodeling company.</p>
+                    <div>
+                        <a href="https://www.facebook.com/midtownhomeimprovements/" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.google.com/search?hl=en&_ga=2.70399568.1311222460.1632512454-692005382.1632512454&q=Midtown+Home+Improvements&ludocid=6810783901300100310&lsig=AB86z5XtLu-gVyj5Owl5LPCqtEHP" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/midtownhomeimprovements/?hl=en" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto my-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Locations</h6>
+                    <p>St. Louis, MO</p>
+                    <p>Lee's Summit, MO</p>
+                    <p>Nashville, TN</p>
+                    <p>Chicago, IL</p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto my-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                    <p><a href="{% url 'pages:financing' %}" class="text-reset">Financing</a></p>
+                    <p><a href="{% url 'pages:awards_midtown' %}" class="text-reset">Awards</a></p>
+                    <p><a href="#!" class="text-reset">Services</a></p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 my-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Wentzville, MO 63385, US</p>
+                    <p><i class="fas fa-envelope me-3"></i> info@midtownhi.com</p>
+                    <p><i class="fas fa-phone me-3"></i> <mark class="bg-green fw-bold text-ghost">+1 636 379 8889</mark></p>
+                    {# <p><i class="fas fa-print me-3"></i> +1 123 456 7890</p> #}
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center bg-green p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        Copyright 2021 by Midtown Home Improvements. All Rights Reserved.
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
 <!-- Button trigger modal -->
 <div class="container-fluid d-flex justify-content-end fixed-bottom mb-2">
     <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Contact US
+        Send Us a Message
     </button>
 </div>
 
